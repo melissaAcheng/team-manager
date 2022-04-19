@@ -10,6 +10,21 @@ const PlayerSchema = new mongoose.Schema(
     position: {
       type: String,
     },
+    gameOneStatus: {
+      type: String,
+      enum: ["Playing", "Not Playing", "Undecided"],
+      default: "Undecided",
+    },
+    gameTwoStatus: {
+      type: String,
+      enum: ["Playing", "Not Playing", "Undecided"],
+      default: "Undecided",
+    },
+    gameThreeStatus: {
+      type: String,
+      enum: ["Playing", "Not Playing", "Undecided"],
+      default: "Undecided",
+    },
   },
   { timestamps: true }
 );

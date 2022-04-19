@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Nav from "./Nav";
+import SubNav from "./SubNav";
 
 const PlayerList = () => {
   const [playerList, setPlayerList] = useState([]);
@@ -35,15 +37,8 @@ const PlayerList = () => {
   };
 
   return (
-    <div className="container border border-dark p-3">
-      <div className="container d-flex justify-content-around">
-        <h2>
-          <Link to={"/players/list"}>List</Link>
-        </h2>
-        <h2>
-          <Link to={"/players/addplayer"}>Add Player</Link>
-        </h2>
-      </div>
+    <div className="container w-50 border border-dark p-3">
+      <SubNav />
       <table className="table">
         <thead>
           <tr>

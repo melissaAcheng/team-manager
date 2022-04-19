@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import SubNav from "./SubNav";
 
 const PlayerForm = () => {
   const [name, setName] = useState("");
@@ -39,15 +40,8 @@ const PlayerForm = () => {
   };
 
   return (
-    <div className="container border border-dark p-3">
-      <div className="container d-flex justify-content-around">
-        <h2>
-          <Link to={"/players/list"}>List</Link>
-        </h2>
-        <h2>
-          <Link to={"/players/addplayer"}>Add Player</Link>
-        </h2>
-      </div>
+    <div className="container w-50 border border-dark p-3">
+      <SubNav />
       <div className="container border border-dark p-3">
         <h1>Add Player</h1>
         <form onSubmit={createPlayer}>
