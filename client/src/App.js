@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PlayerForm from "./components/PlayerForm";
 import PlayerList from "./components/PlayerList";
 import Nav from "./components/Nav";
-import { useState } from "react";
 import PlayerStatus from "./components/PlayerStatus";
 
 function App() {

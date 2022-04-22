@@ -1,10 +1,9 @@
 // handles the subnav for PlayerList and PlayerForm
 
 import React from "react";
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const SubNav = ({ listPageIsActive, setListPageIsActive }) => {
+const SubNav = () => {
   const activeStyle = {
     fontWeight: "bolder",
   };

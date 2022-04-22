@@ -3,7 +3,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SubNav2 = ({ listPageIsActive, setListPageIsActive }) => {
+const SubNav2 = () => {
   const activeStyle = {
     fontWeight: "bolder",
   };

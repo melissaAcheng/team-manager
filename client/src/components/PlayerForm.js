@@ -47,7 +47,7 @@ const PlayerForm = () => {
         <form onSubmit={createPlayer}>
           <div className="mb-3">
             <label className="form-label">Player Name:</label>
-            <input className="form-control" type="text" value={name} onChange={handleName} />
+            <input className="form-control" type="text" value={name} onChange={handleName} required />
           </div>
           {nameError && <p className="text-danger">{nameError}</p>}
           {/* {errors.name && <p className="text-danger">{errors.name.message}</p>} */}

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import SubNav2 from "./SubNav2";
-import Game from "./Game";
 
 const PlayerStatus = (props) => {
   const { gameId } = useParams();
@@ -45,7 +44,6 @@ const PlayerStatus = (props) => {
     <div className="container w-50 border border-dark p-3">
       <h1>Player Status - Game {gameId}</h1>
       <SubNav2 />
-      {/* <Game playerList={playerList} setPlayerList={setPlayerList} gameId={gameId} /> */}
       <table className="table">
         <thead>
           <tr>
